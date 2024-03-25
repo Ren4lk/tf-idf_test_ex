@@ -1,0 +1,11 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TF-IDF Table</title>
+    <link rel="stylesheet" href="{% static 'deps/css/page_style.css' %}" />
+  </head>
+
+  <body>{{ tf_idf_table|safe }}</body>
+</html>

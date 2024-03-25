@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload</title>
+  </head>
+
+  <body>
+    <h1>Select a file to create TF-IDF table</h1>
+    <form action="{% url 'tf_idf_table' %}" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="file" name="file" accept=".txt" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
